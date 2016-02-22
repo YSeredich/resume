@@ -63,34 +63,28 @@ body {
     color: #919191;
 }
 
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .title,
 .secondary-title {
     text-transform: uppercase;
     line-height: 24px;
     font-weight: bold;
+    font-size: 22px;
     color: #566366;
-}
-
-.nav__link {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.nav__link:hover {
-    color: #2ecc71;
 }
 
 .title {
     font-size: 30px;
-}
-
-.secondary-title {
-    font-size: 22px;
 }
 
 .contacts__title {
@@ -109,24 +103,7 @@ body {
     border: 2px solid #2ecc71;
 }
 
-.testimonial-item__text {
-    font-size: 24px;
-    line-height: 36px;
-    font-style: italic;
-}
-
-.testimonial-item__author {
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 36px;
-}
-
-.education__place,
-.courses__place {
-    font-weight: 500;
-}
-
-.nav,
+.header,
 .contacts {
     background-color: #252e30;
 }
@@ -148,3 +125,153 @@ body {
 .portfolio {
     background-color: #fff;
 }
+
+.nav {
+    width: 835px;
+    font-size: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav__item:first-child {
+    margin-left: 0;
+}
+
+.nav__link {
+    display: inline-block;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #2ecc71;
+}
+
+.main-info__item {
+    float: left;
+    width: 380px;
+    margin-left: 20px;
+}
+
+.main-info__item:first-child {
+    margin-left: 0;
+}
+
+.minor-info__photo {
+    float: left;
+}
+
+.minor-info__narration {
+    float: left;
+    width: 680px;
+    margin-left: 100px;
+}
+
+.portfolio-item {
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.skills__info {
+    float: left;
+    width: 540px;
+}
+
+.skills-items {
+    float: left;
+    width: 540px;
+    margin-left: 100px;
+}
+
+.resume__title {
+    margin: 0 auto;
+    width: 130px;
+}
+
+.education__place,
+.courses__place {
+    font-weight: 500;
+}
+
+.education-item,
+.courses-item {
+    float: left;
+    width: 365px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.education-item:nth-child(3n+1),
+.courses-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.testimonial-item__text {
+    font-size: 24px;
+    line-height: 36px;
+    font-style: italic;
+}
+
+.testimonial-item__author {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 36px;
+    color: #566366;
+}
+
+.contacts__info {
+    float: left;
+    width: 540px;
+}
+
+.contacts__form {
+    float: left;
+    width: 540px;
+    margin-left: 100px;
+}
+
+.social {
+    width: 260px;
+    font-size: 0;
+}
+
+.social__link {
+    display: inline-block;
+    margin-left: 10px;
+
+    width: 27px;
+    height: 28px;
+    padding-top: 6px;
+    padding-left: 7px;
+
+
+    text-decoration: none;
+    color: #191f21;
+    font-size: 18px;
+
+    background-color: #4b5456;
+    border-radius: 50%;
+}
+
+.social__link:first-child {
+    margin-left: 0;
+}
+
+.social__link:hover {
+    color: #fff;
+}
+
