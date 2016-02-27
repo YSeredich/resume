@@ -84,7 +84,13 @@ body {
 }
 
 .title {
+    padding-top: 100px;
+    margin-bottom: 45px;
     font-size: 30px;
+}
+
+.secondary-title {
+    margin-bottom: 20px;
 }
 
 .contacts__title {
@@ -92,26 +98,27 @@ body {
 }
 
 .btn {
+    display: inline-block;
+
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
     color: #2ecc71;
     text-transform: uppercase;
+    text-decoration: none;
 
-    background-color: #fff;
     border: 2px solid #2ecc71;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
 }
 
 .header,
 .contacts {
     background-color: #252e30;
-}
-
-.minor-info,
-.resume,
-.testimonials {
-    background-color: #f2f2f1;
 }
 
 .footer {
@@ -126,6 +133,12 @@ body {
     background-color: #fff;
 }
 
+.minor-info,
+.resume,
+.testimonials {
+    background-color: #f2f2f1;
+}
+
 .nav {
     width: 835px;
     font-size: 0;
@@ -134,6 +147,7 @@ body {
 .nav__item {
     display: inline-block;
     margin-left: 40px;
+    padding: 20px 0;
 }
 
 .nav__item:first-child {
@@ -156,6 +170,11 @@ body {
     color: #2ecc71;
 }
 
+.main-info__text {
+    margin-bottom: 95px;
+    width: 360px;
+}
+
 .main-info__item {
     float: left;
     width: 380px;
@@ -166,8 +185,21 @@ body {
     margin-left: 0;
 }
 
+.minor-info__title {
+    padding-top: 100px;
+    margin-bottom: 45px;
+}
+
+.minor-info__text {
+    margin-bottom: 40px;
+}
+
 .minor-info__photo {
     float: left;
+    width: 610px;
+    height: 755px;
+
+    overflow: hidden;
 }
 
 .minor-info__narration {
@@ -176,14 +208,51 @@ body {
     margin-left: 100px;
 }
 
+.minor-info-items {
+    padding-top: 35px;
+    font-size: 0;
+}
+
+.minor-info__item {
+    display: inline-block;
+    width: 320px;
+    margin-bottom: 55px;
+}
+
+.minor-info__item:nth-child(2n) {
+    margin-left: 40px;
+}
+
+.portfolio__title,
+.portfolio__info {
+    text-align: center;
+}
+
+.portfolio__info {
+    margin-bottom: 95px;
+}
+
+.portfolio {
+    border-bottom: 1px solid #ccc;
+}
+
 .portfolio-item {
     float: left;
+    width: 365px;
     margin-left: 40px;
     margin-bottom: 40px;
 }
 
+.portfolio-item:last-child {
+    margin-bottom: 100px;
+}
+
 .portfolio-item:nth-child(3n+1) {
     margin-left: 0;
+}
+
+.minor-info-item__text {
+    font-size: 18px;
 }
 
 .skills__info {
@@ -197,14 +266,87 @@ body {
     margin-left: 100px;
 }
 
-.resume__title {
-    margin: 0 auto;
-    width: 130px;
+.skills__text {
+    margin-bottom: 45px;
+}
+
+.skills__btn {
+    padding: 15px 36px;
+    margin-bottom: 180px;
+}
+
+.skill-item {
+    margin-bottom: 40px;
+}
+
+.skill-item__progress {
+    width: 560px;
+    height: 30px;
+
+    background-color: #f2f2f1;
+}
+
+.skill-item__percent {
+    width: 56px;
+    height: 30px;
+    padding-left: 448px;
+
+    color: #fff;
+    font-weight: bold;
+    background-color: #2ecc71;
+}
+
+.resume__container {
+    text-align: center;
+}
+
+.resume__info {
+    margin-bottom: 45px;
+}
+
+.resume__btn {
+    padding: 19px;
+    width: 167px;
+    margin-bottom: 100px;
+}
+
+.education {
+    border-bottom: 1px solid #ccc;
 }
 
 .education__place,
-.courses__place {
+.courses__place,
+.contacts__mail,
+.contacts__phone {
     font-weight: 500;
+}
+
+.education__place-date,
+.courses__place-date {
+    margin-bottom: 15px;
+}
+
+.education__gpa,
+.courses__gpa {
+    margin-bottom: 30px;
+    width: 70px;
+    height: 30px;
+
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+    background-color: #2ecc71;
+}
+
+.english-level {
+    width: 200px;
+}
+
+.education__info,
+.courses__info {
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
 }
 
 .education-item,
@@ -213,6 +355,10 @@ body {
     width: 365px;
     margin-left: 40px;
     margin-bottom: 40px;
+}
+
+.courses-item:last-child {
+    margin-bottom: 100px;
 }
 
 .education-item:nth-child(3n+1),
@@ -236,6 +382,16 @@ body {
 .contacts__info {
     float: left;
     width: 540px;
+    color: #ccc;
+}
+
+.contacts__text,
+.contacts__address {
+    margin-bottom: 45px;
+}
+
+.contacts__mail-phone {
+    margin-bottom: 450px;
 }
 
 .contacts__form {
@@ -244,9 +400,55 @@ body {
     margin-left: 100px;
 }
 
+.contact-form__name-lbl,
+.contact-form__mail-lbl,
+.contact-form__letter-lbl {
+    display: block;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-form__name-block,
+.contact-form__mail-block,
+.contact-form__letter-block {
+    margin-bottom: 35px;
+}
+
+.contact-form__user-name,
+.contact-form__user-mail,
+.contact-form__user-message {
+    height: 53px;
+    width: 523px;
+    padding-left: 15px;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+
+    background-color: #4b5456;
+    border: 1px solid #4b5456;
+}
+
+.contact-form__user-message {
+    height: 280px;
+}
+
+.star {
+    color: #ccc;
+}
+
+.contact-form__btn {
+    padding: 20px 35px;
+    color: #fff;
+    background-color: #191f21;
+    border: none;
+}
+
 .social {
     width: 260px;
     font-size: 0;
+    padding: 50px 0;
 }
 
 .social__link {
@@ -256,8 +458,8 @@ body {
     width: 27px;
     height: 28px;
     padding-top: 6px;
-    padding-left: 7px;
-
+    padding-left: 8px;
+    vertical-align: middle;
 
     text-decoration: none;
     color: #191f21;
