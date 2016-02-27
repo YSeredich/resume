@@ -55,6 +55,9 @@
 .icon-html5:before {
     content: "\66";
 }
+.icon-user:before {
+    content: "\67";
+}
 
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -186,12 +189,12 @@ body {
 }
 
 .minor-info__title {
-    padding-top: 100px;
+    padding-top: 90px;
     margin-bottom: 45px;
 }
 
 .minor-info__text {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .minor-info__photo {
@@ -209,14 +212,41 @@ body {
 }
 
 .minor-info-items {
-    padding-top: 35px;
     font-size: 0;
+    padding-top: 20px;
 }
 
 .minor-info__item {
     display: inline-block;
+    position: relative;
     width: 320px;
-    margin-bottom: 55px;
+    margin-bottom: 42px;
+    vertical-align: top;
+}
+
+.minor-info-item__title {
+    padding-left: 75px;
+}
+
+.minor-info-item__title:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 50px;
+
+    z-index: 10;
+}
+
+.logo-js:before {
+    content: "JS";
+    top: 10px;
+}
+
+.icon-html5 {
+    margin-bottom: 30px;
 }
 
 .minor-info__item:nth-child(2n) {
@@ -241,6 +271,10 @@ body {
     width: 365px;
     margin-left: 40px;
     margin-bottom: 40px;
+}
+
+.portfolio-item:hover {
+    opacity: 0.5;
 }
 
 .portfolio-item:last-child {
@@ -296,6 +330,14 @@ body {
     background-color: #2ecc71;
 }
 
+.percent-70 {
+    padding-left: 336px;
+}
+
+.percent-60 {
+    padding-left: 280px;
+}
+
 .resume__container {
     text-align: center;
 }
@@ -317,7 +359,8 @@ body {
 .education__place,
 .courses__place,
 .contacts__mail,
-.contacts__phone {
+.contacts__phone,
+.skills__span {
     font-weight: 500;
 }
 
