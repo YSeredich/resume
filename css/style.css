@@ -386,6 +386,24 @@ body {
     width: 200px;
 }
 
+.education__container {
+    position: relative;
+}
+
+.education__title:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 47%;
+    width: 0;
+    height: 0;
+
+    z-index: 10;
+    border-top: 20px solid #f2f2f1;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
 .education__info,
 .courses__info {
     padding-top: 30px;
